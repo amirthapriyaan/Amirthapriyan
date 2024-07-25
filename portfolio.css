@@ -1,4 +1,7 @@
 /* General Styles */
+*{
+    padding: 0;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -20,11 +23,13 @@ html {
 }
 
 .navhead {
+    width: 100%;
     display: flex;
     align-items: center;
     box-shadow: 0px 5px 5px rgba(146, 161, 176, 0.35);
     justify-content: space-between;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .name {
@@ -134,16 +139,21 @@ a:hover {
 
 .main-2 {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    
+    justify-content: space-around;
     padding: 1rem;
     background-color: white;
 }
 
-.l-1, .r-1 {
-    flex: 1;
-    /* border: 1px solid black; */
-    padding: 1rem;
+.l-1{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.r-1{
+    width: 50%;
+    display: flex;
+    justify-content: left;
 }
 .r1{
     display: flex;
@@ -177,7 +187,7 @@ a:hover {
 
 .main-3 {
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: space-around;
     background-color: white;
 }
@@ -203,8 +213,8 @@ a:hover {
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
-    width: 100%;
-    padding: 10px;
+    width: 80%;
+    /* padding: 10px; */
 }
 
 .topic {
@@ -240,7 +250,7 @@ a:hover {
 .row1 {
     width: 25rem;
     max-width: 800px;
-    margin: 1rem 0;
+    margin-top: 1.2rem ;
     border-radius: 10px;
     border: 1px solid black;
     overflow: hidden;
@@ -268,8 +278,30 @@ a:hover {
     .links {
         display: none;
     }
-    .r-2 {
-        display: none;
+   .r-2 img{
+    height: auto;
+    width: 100%;
+   }
+    .l-2{
+        width: 100%;
+    }
+    .table{
+       
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 2rem;
+        flex-wrap: wrap;
+    } 
+    .row1{
+        padding: 0;
+        margin-left: 1rem;
     }
     .table {
         flex-direction: column;
@@ -278,9 +310,11 @@ a:hover {
 
 @media (max-width: 768px) {
     .navhead {
-        padding: 0.5rem;
+        padding-top: 0.2;
     }
-
+    .r-2{
+        padding: 0;
+    }
     .name {
         font-size: medium;
     }
@@ -299,13 +333,20 @@ a:hover {
     }
 
     .first-page {
+       
         flex-direction: column;
     }
-
+    .main-2{
+        flex-direction: column;
+    }
     .left, .right {
         width: 100%;
     }
-
+   .left{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+   }
     .main-2 {
         flex-direction: column;
     }
@@ -314,8 +355,12 @@ a:hover {
         width: 100%;
         border: none;
         display: flex;
+        /* justify-content: center; */
     }
-
+.r-1{
+    display: flex;
+    
+}
     .desc, .profile-pic {
         width: 100%;
     }
@@ -324,28 +369,34 @@ a:hover {
         height: 8rem;
         width: 8rem;
     }
+    .first-page{
+        flex-direction: column;
+        margin: 0;padding: 0;
+
+    }
+    .left{
+         width: 100%;
+    }
+    
 }
 
 @media (max-width: 480px) {
     .name {
         font-size: small;
     }
-
-    .navhead {
-        padding: 0.5rem;
-    }
-
-    ul {
-        flex-direction: column;
-    }
-
     li {
         margin: 0.5rem 0;
         font-size: small;
     }
-
-    .profile-pic {
-        height: 6rem;
-        width: 6rem;
+    .row1{
+        display: flex;
+        flex-direction: column;
     }
+   .row{
+    width: 90%;
+    margin-left: 0px;
+    margin: 0;
+    padding: 0;
+   }
+   
 }
