@@ -1,11 +1,12 @@
 /* General Styles */
 *{
     padding: 0;
+    
 }
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Optional: Set a background color for better contrast */
+    /* background-color: #f4f4f4; Optional: Set a background color for better contrast */
     line-height: 1.6;
     color: #333;
 }
@@ -20,6 +21,7 @@ html {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
+    
 }
 
 .navhead {
@@ -30,10 +32,13 @@ html {
     justify-content: space-between;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    
+    
 }
 
 .name {
     font-size: 1.5rem;
+    margin-left: 1rem;
 }
 
 .info {
@@ -43,6 +48,7 @@ html {
 
 .connect {
     margin-left: 1rem;
+    margin-right: 1rem;
     display: flex;
 }
 
@@ -112,8 +118,11 @@ a:hover {
     font-size: 1rem;
     line-height: 1.2;
     padding: 2rem;   
-    border: 1px solid black;
+  
     justify-content: left;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
 }
 .left{
     padding: 3rem;
@@ -130,11 +139,11 @@ a:hover {
 }
 
 .head-1 {
-    background-color: #333;
-    color: white;
+    
+    color: Blue;
     text-align: center;
-    padding: 0.2rem;
-    box-shadow: 0px 5px 5px rgba(146, 161, 176, 0.35);
+    
+   
 }
 
 .main-2 {
@@ -178,6 +187,9 @@ a:hover {
     /* border: 2px solid black; */
     padding: 2rem;
     align-items: center;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    justify-content: center;
 }
 
 /* Skills Section */
@@ -186,10 +198,22 @@ a:hover {
 }
 
 .main-3 {
-    display: flex;
+    /* display: flex; */
     
     justify-content: space-around;
     background-color: white;
+}
+.skill-1{
+    max-width: 350px;
+    /* border: 1px solid gray; */
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        padding: 1.5rem;
+        font-size: 15px;
+        /* border: 2px solid black; */
+}
+#im-2{
+    height: 80px;
 }
 
 .l-2 {
@@ -231,19 +255,28 @@ a:hover {
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+   
     justify-content: space-around;
-    padding: 2rem;
+    
 }
 
 .pro1 {
-    max-width: 300px;
-    border: 1px solid gray;
-}
-
-.pro1 img {
-    width: 100%;
-    height: auto;
+    max-width: 350px;
+    /* border: 1px solid gray; */
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        padding: 1.5rem;
+        font-size: 15px;
+        /* border: 2px solid black; */
+    }
+    
+    .pro1 img {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        max-width: 700px;
+        max-height: 250px;
+        /* border-radius: 20px; */
 }
 
 /* Skill Rows */
@@ -266,13 +299,55 @@ a:hover {
     display: flex;
     margin-top: auto;
 }
-
+.table{
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    border-radius: 20px;
+}
 .skill-bar {
     height: 100%;
     background-color: blue;
     border-radius: 20px;
 }
+.main-4{
+    display: flex;
+    justify-content: space-around;
+}
+.l-4{
+    width: 60%;
+    display: flex;
+    justify-content: center;
 
+}
+
+.r-4 img{
+    width: 90%;
+    border-radius: 20px;
+    
+}
+
+.r-4{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.cont-1{
+    width: 60%;
+   
+    border-radius: 20px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    padding: 5rem;
+    font-size: larger;
+}
+.connect-me a{
+   display: flex;
+}
+
+img:hover{
+    scale: 1.05;
+}
 /* Media Queries */
 @media (max-width: 1024px) {
     .links {
@@ -290,11 +365,13 @@ a:hover {
         width: 100%;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+       
+        flex-direction: row;
+         box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
     }
     .row{
         display: flex;
-        flex-direction: row;
         justify-content: space-around;
         padding-left: 2rem;
         flex-wrap: wrap;
@@ -312,9 +389,19 @@ a:hover {
     .navhead {
         padding-top: 0.2;
     }
+    .right{
+        display: none;
+    }
+    .l-1 img{
+        display: none;
+    }
+    .desc{
+        font-size: 10px;
+    }
     .r-2{
         padding: 0;
     }
+  
     .name {
         font-size: medium;
     }
@@ -377,6 +464,13 @@ a:hover {
     .left{
          width: 100%;
     }
+    .l-4{
+        width: 100%;
+    }
+    .r-4{
+        width: 0;
+        display: none;
+    }
     
 }
 
@@ -388,9 +482,15 @@ a:hover {
         margin: 0.5rem 0;
         font-size: small;
     }
+    .row{
+        width: 50%;
+    
+    }
     .row1{
         display: flex;
         flex-direction: column;
+        max-width: 200px;
+        min-width: 150px;
     }
    .row{
     width: 90%;
@@ -398,5 +498,9 @@ a:hover {
     margin: 0;
     padding: 0;
    }
-   
+   .cont-1{
+    width: 90%;
+    padding: 10px;
+    font-size: small;
+   }
 }
