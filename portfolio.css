@@ -255,7 +255,9 @@ a:hover {
     width: 80%;
     /* padding: 10px; */
 }
-
+.main-2 img:hover{
+    scale: 1;
+}
 .topic {
     text-align: center;
     font-size: 1.2rem;
