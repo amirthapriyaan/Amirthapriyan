@@ -1,4 +1,4 @@
-/* General Styles */
+
 *{
     padding: 0;
     
@@ -16,7 +16,7 @@ html {
     --scroll-time: 5s;
 }
 
-/* Navigation Header */
+
 .header {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -81,7 +81,7 @@ a:hover {
     color: blue;
 }
 
-/* First Page Section */
+
 .first-page {
     display: flex;
     padding: 1rem;
@@ -131,7 +131,6 @@ a:hover {
     margin: 0 0.5rem;
 }
 
-/* About Section */
 .s-2 {
     padding: 1rem;
     position: relative;
@@ -192,7 +191,7 @@ a:hover {
     justify-content: center;
 }
 
-/* Skills Section */
+
 .s-3 {
     padding: 1rem;
 }
@@ -247,7 +246,7 @@ a:hover {
     font-weight: bold;
 }
 
-/* Projects Section */
+
 .s-4 {
     padding: 1rem;
 }
@@ -279,7 +278,7 @@ a:hover {
         /* border-radius: 20px; */
 }
 
-/* Skill Rows */
+
 .row1 {
     width: 25rem;
     max-width: 800px;
@@ -349,7 +348,7 @@ a:hover {
 img:hover{
     scale: 1.05;
 }
-/* Media Queries */
+
 @media (max-width: 1024px) {
     .links {
         display: none;
